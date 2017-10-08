@@ -1,0 +1,24 @@
+                      Server
+                      
+Use Amazon Service EC2 to Launch instance of Ubuntu server.
+Add inbound TCP rule at port "5678".
+Connect to the server (Putty).
+Execute: $sudo apt-get update
+   	  $sudo add-apt-repository ppa:webupd8team/java 
+	  $sudo apt-get update
+	  $sudo apt-get install oracle-java8-installer
+	  $sudo nano MultiThreadedTCPServer.java
+	  ( write the code for the server side)
+	  $^O 
+	  ( press Enter )
+	  $^X
+	  $javac MultiThreadedTCPServer.java
+	  $java MultiThreadedTCPServer <port> <repetitions>		
+	   e.g. java MultiThreadedTCPServer 5678 1000
+
+
+                      Client
+                      
+Execute TCPClients.java ( code for the client side ) on the computer
+java TCPClients <server ip> <port>
+e.g. java TCPClients "123.234.3.45" 5678
