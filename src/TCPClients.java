@@ -43,7 +43,7 @@ class Threads implements Runnable {
 	        		
 	        		String message, response;
 	        		addr = InetAddress.getLocalHost();
-		            Socket socket = new Socket("35.163.132.48" , port);
+		            Socket socket = new Socket(serverip , port);
 		            
 		            	          
 		            DataOutputStream output = new DataOutputStream(socket.getOutputStream());
